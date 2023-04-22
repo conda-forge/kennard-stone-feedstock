@@ -1,13 +1,15 @@
-About kennard-stone
-===================
+About kennard-stone-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/kennard-stone-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/yu9824/kennard_stone
 
 Package license: MIT
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/kennard-stone-feedstock/blob/main/LICENSE.txt)
-
 Summary: A method for selecting samples by spreading the training data evenly.
+
+Development: https://github.com/yu9824/kennard_stone/
 
 Current build status
 ====================
