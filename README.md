@@ -9,8 +9,6 @@ Package license: MIT
 
 Summary: A method for selecting samples by spreading the training data evenly.
 
-Development: https://github.com/yu9824/kennard_stone/
-
 Current build status
 ====================
 
