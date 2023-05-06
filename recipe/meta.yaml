@@ -1,5 +1,5 @@
 {% set name = "kennard-stone" %}
-{% set version = "2.1.0" %}
+{% set version = "2.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/kennard_stone-{{ version }}.tar.gz
-  sha256: d8f9eaa7abaaa0dc4aacf60bf76ee888b22df3dfeaea2ff7a20c9bad2b453f3b
+  sha256: cd662b713f1ca42fc1edc741fbc4e9628cb72f7bb887c0a0300004b56c4b755e
 
 build:
   noarch: python
