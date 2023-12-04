@@ -1,5 +1,5 @@
 {% set name = "kennard-stone" %}
-{% set version = "2.2.0" %}
+{% set version = "2.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/kennard_stone-{{ version }}.tar.gz
-  sha256: 0bc9c11e118a40c4e4eec6536a0df789e21105e9f0c312796322590dc2f252c2
+  sha256: 71d5e4d59318b4f4a0170a71c60634dc4a187351caedce8c69ab57d818550ab8
 
 build:
   noarch: python
@@ -32,9 +32,9 @@ test:
     - pip
 
 about:
-  home: https://github.com/yu9824/kennard-stone
-  summary: '"A method for selecting samples by spreading the training data evenly."'
-  dev_url: https://github.com/yu9824/kennard-stone
+  home: https://github.com/yu9824/kennard_stone
+  summary: A method for selecting samples by spreading the training data evenly.
+  dev_url: https://github.com/yu9824/kennard_stone
   license: MIT
   license_file: LICENSE
 
