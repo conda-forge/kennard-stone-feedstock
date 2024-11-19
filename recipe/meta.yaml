@@ -10,18 +10,20 @@ source:
   sha256: cbd8c9a514762b4943d0f22e74fbe28500a67478ddeeae1e316ef99d8dd473eb
 
 build:
-  noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  skip: true  # [py<38]
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
+    - setuptools
     - pip
   run:
-    - python >=3.6
+    - python >=3.8
     - numpy >=1.20.0
     - scikit-learn
+    - typing_extensions >=4.9.0
 
 test:
   imports:
@@ -32,7 +34,6 @@ test:
     - pip
 
 about:
-  home: https://github.com/yu9824/kennard_stone
   summary: A method for selecting samples by spreading the training data evenly.
   dev_url: https://github.com/yu9824/kennard_stone
   license: MIT
