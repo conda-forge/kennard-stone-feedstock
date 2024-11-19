@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/kennard_stone-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/kennard_stone-{{ version }}.tar.gz
   sha256: cbd8c9a514762b4943d0f22e74fbe28500a67478ddeeae1e316ef99d8dd473eb
 
 build:
