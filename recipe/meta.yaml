@@ -1,5 +1,5 @@
 {% set name = "kennard-stone" %}
-{% set version = "3.0.2" %}
+{% set version = "4.1.1" %}
 {% set python_min = "3.8" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/kennard_stone-{{ version }}.tar.gz
-  sha256: 004734ffe066e4d3e085dd0d410c7ce192abfe517488e3d78099f8f2aeb25ba5
+  sha256: 979a0dc2cb3c687fcb3d74010bc33b4bbc9625cc544c7f89c7c110abb57806bf
 
 build:
   noarch: python
