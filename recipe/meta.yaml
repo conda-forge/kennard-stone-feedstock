@@ -1,5 +1,5 @@
 {% set name = "kennard-stone" %}
-{% set version = "4.0.0" %}
+{% set version = "4.1.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/kennard_stone-{{ version }}.tar.gz
-  sha256: b7a3b76d7953baf360d3359f572c2607e389376bb828980a38d442174adb6867
+  sha256: 5c654609dcfdb73ac7dc7263ffdc11af4df2177925506b1b68091c40b006bbb2
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - numpy >=1.20.0
-    - scikit-learn <1.9
+    - scikit-learn <1.10
 
 test:
   imports:
