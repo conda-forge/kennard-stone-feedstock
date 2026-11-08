@@ -1,6 +1,6 @@
 {% set name = "kennard-stone" %}
 {% set version = "4.1.1" %}
-{% set python_min = "3.8" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -18,13 +18,13 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools
+    - setuptools >=77.0.3
+    - setuptools-scm >=8
     - pip
   run:
     - python >={{ python_min }}
     - numpy >=1.20.0
-    - scikit-learn
-    - typing_extensions >=4.9.0
+    - scikit-learn <1.10
 
 test:
   imports:
